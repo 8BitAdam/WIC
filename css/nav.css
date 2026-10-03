@@ -1,0 +1,71 @@
+
+body > header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+body > header nav ul li a {
+    color: var(--color-light);
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 0.6em 1em;
+    display: block;
+    border-bottom: 4px solid transparent;
+    text-align: center;
+    transition:
+        border-color 0.4s ease-in-out,
+        color 0.4s ease-in-out;
+}
+
+body > header nav ul li a:hover {
+    border-bottom-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+
+/* Navbar alignment */
+
+nav.left > ul {
+    justify-content: flex-start;
+}
+
+nav.right > ul {
+    justify-content: flex-end;
+}
+
+nav.center > ul {
+    justify-content: center;
+}
+
+nav.full > ul {
+    width: 100%;
+}
+
+
+/* Mobile navbar */
+
+@media (max-width: 800px) {
+    nav > ul {
+        flex-direction: column;
+    }
+
+    nav > ul li,
+    nav > ul li a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    nav > ul li a:hover {
+        border-bottom-color: transparent;
+    }
+}
+
+
+/* Top color section */
+
+.top-color {
+    padding-bottom: 1em;
+}
+

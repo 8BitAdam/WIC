@@ -1,0 +1,62 @@
+/* Image container */
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Blurring the image */
+.gfg {
+    filter: blur(5px);
+    width: 100%;
+    display: block;
+    transform: scale(1.02); /* Prevents blurred edges */
+}
+
+/* Logo / text overlay */
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Title and tagline */
+.logo h1,
+.logo p {
+    border: 4px solid white;
+    padding: 10px 50px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* Title hover */
+.logo h1:hover {
+    background: linear-gradient(green, lime);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Button */
+.logo button {
+    border: none;
+    outline: none;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Button hover */
+.logo button:hover {
+    background-color: green;
+    color: white;
+}
